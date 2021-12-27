@@ -34,8 +34,5 @@ TABLESPACE pg_default;
 ALTER TABLE IF EXISTS public.restaurant_location
     OWNER to postgres;
 
-REVOKE ALL ON TABLE public.restaurant_location FROM usergps;
-
 GRANT ALL ON TABLE public.restaurant_location TO postgres;
 
-GRANT DELETE, UPDATE, INSERT, SELECT ON TABLE public.restaurant_location TO usergps;
